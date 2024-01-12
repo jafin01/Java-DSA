@@ -1,18 +1,35 @@
-## Getting Started
+## Getting Started With DSA
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to the Java DSA world. Here are all the Data Structures and Algorithms you ever need to help you get prepared for your job interviews.
 
 ## Folder Structure
 
 The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+  - `linkedList`: the folder containing Linked List implementation
+    - printList()
+    - getHead()
+    - getTail()
+    - getLength()
+    - getLastValue()
+    - append()
+    - prepend()
+    - removeFirst()
+    - removeLast()
+    - get()
+    - set()
+    - insert()
+    - remove()
+    - reverse()
+    - findMiddleNode()
+    - hasLoop()
+    - removeDuplicates()
+  - `doublyLinkedList`: the folder containing Doubly Linked List implementation
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Run locally
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+  - Pull the repository Locally
+  - Navigate to the respective main class of your required Data Structure
+  - Update the code as per your needs.
+  - Click run and you should be able to view the result in your project terminal.
