@@ -1,6 +1,8 @@
 package packages.LinkedList;
 
+import java.util.HashSet;
 import java.util.NoSuchElementException;
+import java.util.Set;
 
 public class LinkedList {
   private Node head;
@@ -190,6 +192,51 @@ public class LinkedList {
       temp.next = before;
       before = temp;
       temp = after;
+    }
+  }
+
+  public Node findMiddleNode() {
+    Node slow = head;
+    Node fast = head;
+    
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+
+    return slow;
+  }
+
+  public boolean hasLoop() {
+    Node slow = head;
+    Node fast = head;
+
+    while(fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+
+      if (slow == fast) return true;
+    }
+
+    return false;
+  }
+
+  public void removeDuplicates() {
+    Set<Integer> values = new HashSet<>();
+
+    Node prev = null;
+    Node curr = head;
+
+    while (curr != null) {
+      if (values.contains(curr.value)) {
+        prev.next = curr.next;
+        length--;
+      } else {
+        values.add(curr.value);
+        prev = curr;
+      }
+
+      curr = curr.next;
     }
   }
 }

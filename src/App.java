@@ -54,5 +54,18 @@ public class App {
         System.out.println("reversed array: ");
         LL.reverse();
         LL.printList();
+
+        System.out.println("Middle Node " + LL.findMiddleNode().value);
+
+        System.out.println("has Loop ?: " + LL.hasLoop());
+
+        System.out.println("Adding 9 to index 2 and appending 3 to the list: ");
+        LL.append(3);
+        LL.insert(2, 9);
+        LL.printList();
+
+        System.out.println("Removing duplicates: ");
+        LL.removeDuplicates();
+        LL.printList();
     }
 }
