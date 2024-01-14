@@ -54,16 +54,17 @@ public class Stack {
     height++;
   }
 
-  public void pop() {
-    if (top == null) return;
+  public Node pop() {
+    if (top == null) return null;
 
+    Node temp = top;
     if (height == 1) top = null;
     else {
-      Node temp = top;
       top = top.next;
       temp.next = null;
     }
 
     height--;
-  }
+    return temp;
+  } 
 }

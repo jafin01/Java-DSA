@@ -13,16 +13,14 @@ public class Main {
     myStack.printStack();
 
     // removing an element from the stack
-    System.out.println("Removing the top element from the list");
-    myStack.pop();
+    System.out.println("Removing the top element from the list: " + myStack.pop().value);
+    
     myStack.printStack();
 
-    System.out.println("Removing the top element from the list");
-    myStack.pop();
+    System.out.println("Removing the top element from the list: " + myStack.pop().value);
     myStack.printStack();
 
-    System.out.println("Removing the top element from the list");
-    myStack.pop();
+    System.out.println("Removing the top element from the list: " + myStack.pop().value);
     myStack.printStack();
   }
 }
