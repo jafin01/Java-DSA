@@ -1,5 +1,5 @@
 package LinkedList;
-public class LinkedListMain {
+public class Main {
   public static void main(String[] args) throws Exception {
       // initialised LL with value 1
       LinkedList LL = new LinkedList(1);
