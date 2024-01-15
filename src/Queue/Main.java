@@ -3,7 +3,7 @@ package Queue;
 public class Main {
   public static void main(String[] args) {
     // initialising a new Queue
-    Queue myQueue = new Queue(3);
+    Queue myQueue = new Queue(1);
     System.out.println("Queue: ");
     myQueue.printQueue();
 
@@ -12,8 +12,8 @@ public class Main {
     System.out.println("Queue: ");
     myQueue.printQueue();
 
-    // adding 1 to the queue
-    myQueue.enqueue(1);
+    // adding 3 to the queue
+    myQueue.enqueue(3);
     System.out.println("Queue: ");
     myQueue.printQueue();
 
@@ -23,8 +23,15 @@ public class Main {
     myQueue.getLength();
 
     // removing an item from the queue
-    myQueue.dequeue();
-    System.out.println("Queue: ");
+    System.out.println("Removed Item from the queue: " + myQueue.dequeue().value);
+    myQueue.printQueue();
+
+    // removing an item from the queue
+    System.out.println("Removed Item from the queue: " + myQueue.dequeue().value);
+    myQueue.printQueue();
+
+    // removing an item from the queue
+    System.out.println("Removed Item from the queue: " + myQueue.dequeue().value);
     myQueue.printQueue();
   }
 }

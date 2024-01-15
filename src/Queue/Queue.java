@@ -19,7 +19,7 @@ public class Queue {
 
     head = newNode;
     tail = newNode;
-    length++;
+    length = 1;
   }
 
   public void printQueue() {
@@ -52,35 +52,30 @@ public class Queue {
       head = newNode;
       tail = newNode;
     } else {
-      newNode.next = head;
-      head = newNode;
+      tail.next = newNode;
+      tail = newNode;
     }
 
     length++;
   }
 
-  public void dequeue() {
+  public Node dequeue() {
     if (head == null) {
       System.out.println("Queue is Empty");
-      return;
+      return null;
     }
+
+    Node temp = head;
 
     if (length == 1) {
       head = null;
       tail = null;
     } else {
-      Node temp = head;
-
-      while (temp.next.next != null) {
-        temp = temp.next;
-      }
-
-      System.out.println("Temp: " + temp.value);
-
+      head = head.next;
       temp.next = null;
-      tail = temp;
     }
 
     length--;
+    return temp;
   }
 }
