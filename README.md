@@ -7,7 +7,7 @@ Welcome to the Java DSA world. Here are all the Data Structures and Algorithms y
 The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
-  - `linkedList`: The package containing Linked List implementation
+  - `linkedlist`: The package containing Linked List implementation
     - printList()
     - getHead()
     - getTail()
@@ -25,7 +25,7 @@ The workspace contains two folders by default, where:
     - findMiddleNode()
     - hasLoop()
     - removeDuplicates()
-  - `doublyLinkedList`: The package containing Doubly Linked List implementation
+  - `doublylinkedlist`: The package containing Doubly Linked List implementation
     - printList()
     - getHead()
     - getTail()
