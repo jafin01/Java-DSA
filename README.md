@@ -7,7 +7,7 @@ Welcome to the Java DSA world. Here are all the Data Structures and Algorithms y
 The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
-  - `linkedList`: the folder containing Linked List implementation
+  - `linkedList`: The package containing Linked List implementation
     - printList()
     - getHead()
     - getTail()
@@ -25,7 +25,44 @@ The workspace contains two folders by default, where:
     - findMiddleNode()
     - hasLoop()
     - removeDuplicates()
-  - `doublyLinkedList`: the folder containing Doubly Linked List implementation
+  - `doublyLinkedList`: The package containing Doubly Linked List implementation
+    - printList()
+    - getHead()
+    - getTail()
+    - getLength()
+    - append()
+    - removeLast()
+    - prepend()
+    - removeFirst()
+    - get()
+    - set()
+    - insert()
+    - remove()
+    - swapFirstAndLast()
+    - isPalindrome() 
+  - `stack`: The package containing Stack implementation
+    - printStack()
+    - getTop()
+    - getHeight()
+    - push()
+    - pop()
+  - `queue`: The package containing Queue implementation
+    - printQueue()
+    - getLength()
+    - getHead() (getFirst)
+    - getTail() (getLast)
+    - enqueue()
+    - dequeue()
+  - `binarysearchtree`: The package conatining Binary Search Tree implementation
+    - getRootNode()
+    - insert()
+    - contains()
+  - `hashtable`: The package containing HashMap implementation
+    - hash() - hashing function
+    - printTable()
+    - set()
+    - get()
+    - remove()    
 
 ## Run locally
 
