@@ -70,4 +70,23 @@ public class HashTable {
 
     return 0;
   }
+
+  public void remove(String key) {
+    int index = hash(key);
+    Node dummyNode = new Node("dummy", -1);
+    dummyNode.next = dataMap[index];
+    Node prev = dummyNode;
+    Node temp = dataMap[index];
+
+    while (temp != null) {
+      if (temp.key == key) {
+        prev.next = temp.next;
+        break;
+      }
+      prev = temp;
+      temp = temp.next;
+    }
+
+    dataMap[index] = dummyNode.next;
+  }
 }
