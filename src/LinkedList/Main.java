@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedlist;
 public class Main {
   public static void main(String[] args) throws Exception {
       // initialised LL with value 1
