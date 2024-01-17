@@ -15,5 +15,8 @@ public class Main {
     System.out.println("value of lumber are " + myHashTable.get("lumber"));
     System.out.println("value of bolts are " + myHashTable.get("bolts"));
     System.out.println("value of screwdrivers are " + myHashTable.get("screwdrivers"));
+
+    myHashTable.remove("tile");
+    myHashTable.printTable();
   }
 }
