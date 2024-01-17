@@ -4,7 +4,7 @@ Welcome to the Java DSA world. Here are all the Data Structures and Algorithms y
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The workspace contains the following folders by default, where:
 
 - `src`: the folder to maintain sources
   - `linkedlist`: The package containing Linked List implementation
