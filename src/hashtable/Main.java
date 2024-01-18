@@ -18,5 +18,8 @@ public class Main {
 
     myHashTable.remove("tile");
     myHashTable.printTable();
-  }
+
+    myHashTable.set("tile", 50);
+    System.out.println("All Keys: " + myHashTable.keys());
+  } 
 }
