@@ -10,5 +10,9 @@ public class Main {
     System.out.println(myGraph.addVertex("B"));
     System.out.println(myGraph.addEdge("A", "B"));
 
+    // Remove the edges b/w A and B
+    System.out.println(myGraph.removeEdge("A", "B"));
+
+    myGraph.printGraph();
   }
 }
