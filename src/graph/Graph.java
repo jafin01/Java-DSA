@@ -12,6 +12,12 @@ public class Graph {
     System.out.println("Graph" + adjList);
   }
 
-
+  public boolean addVertex(String vertex) {
+    if (!adjList.containsKey(vertex)) {
+      adjList.put(vertex, new ArrayList<>());
+      return true;
+    }
+    return false;
+  }
 
 }
