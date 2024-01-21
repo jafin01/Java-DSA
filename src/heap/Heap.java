@@ -31,4 +31,16 @@ public class Heap {
     heap.set(index1, heap.get(index2));
     heap.set(index2, temp);
   }
+
+  public void insert(int value) {
+    heap.add(value);
+    int curr = heap.size() - 1;
+    int parent = parent(curr);
+
+    while (curr > 0 && heap.get(curr) > heap.get(parent)) {
+      swap(curr, parent);
+      curr = parent;
+      parent = parent(curr);
+    }
+  }
 }
