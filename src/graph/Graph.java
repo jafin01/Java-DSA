@@ -40,4 +40,22 @@ public class Graph {
     return false;
   }
 
+  public boolean removeVertex(String vertex) {
+    if (adjList.containsKey(vertex)) {
+      if (adjList.get(vertex).size() == 0) {
+        adjList.remove(vertex);
+        return true;
+      } else {
+        List<String> values = adjList.get(vertex);
+        for (String val : values) {
+          adjList.get(val).remove(vertex);
+        }
+        adjList.remove(vertex);
+        return true;
+      }
+    }
+    return false;
+  }
+
+
 }
