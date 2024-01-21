@@ -18,6 +18,45 @@ public class Main {
 
     // adding value 75
     myheap.insert(75 );
-    System.out.println(myheap.getHeap());;
+    System.out.println(myheap.getHeap());
+
+    // removing element from heap;
+    myheap.remove();
+    System.out.println(myheap.getHeap());
+    
+    myheap.remove();
+    System.out.println(myheap.getHeap());
+
+    myheap.remove();
+    System.out.println(myheap.getHeap());
+
+    myheap.remove();
+    System.out.println(myheap.getHeap());
+
+    myheap.remove();
+    System.out.println(myheap.getHeap());
+
+    myheap.remove();
+    System.out.println(myheap.getHeap());
+
+    // adding 80, 75, 65, 55, 60, 50
+    myheap.insert(80);
+    myheap.insert(75);
+    myheap.insert(65);
+    myheap.insert(55);
+    myheap.insert(60);
+    myheap.insert(50);
+    myheap.insert(95);
+
+    System.out.println(myheap.getHeap());
+
+    // remove element
+    System.out.println("Removed " + myheap.remove());
+    System.out.println(myheap.getHeap());
+    
+    System.out.println("Removed " + myheap.remove());
+    System.out.println(myheap.getHeap());
+
+
   }
 }
