@@ -23,7 +23,9 @@ public class Main {
     // check if BST contains a value recursively
     System.out.println(bst.rContains(52));
 
-
+    // insert a value to bst recursively
+    bst.rInsert(10);
+    System.out.println(bst.rContains(10));
   }
 
 }
