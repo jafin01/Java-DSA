@@ -20,6 +20,10 @@ public class Main {
     System.out.println(bst.contains(27));
     System.out.println(bst.contains(17));
 
+    // check if BST contains a value recursively
+    System.out.println(bst.rContains(52));
+
+
   }
 
 }
