@@ -67,6 +67,7 @@ public class Main {
 
 
     System.out.println(BSTTraversal.DFSPreOrder());
+    System.out.println(BSTTraversal.DFSPostOrder());
   }
 
 }

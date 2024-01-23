@@ -179,4 +179,22 @@ public class BinarySearchTree {
     return results;
   }
 
+  public List<Integer> DFSPostOrder() {
+    List<Integer> results = new ArrayList<>();
+    class Traverse {
+      public Traverse(Node currentNode) {
+        if (currentNode.left != null) {
+          new Traverse(currentNode.left);
+        }
+        if (currentNode.right != null) {
+          new Traverse(currentNode.right);
+        }
+        results.add(currentNode.value);
+      }
+    }
+
+    new Traverse(root);
+    return results;
+  }
+
 }
