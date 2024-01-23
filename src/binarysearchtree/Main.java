@@ -26,6 +26,30 @@ public class Main {
     // insert a value to bst recursively
     bst.rInsert(10);
     System.out.println(bst.rContains(10));
+
+    // initialise an empty binary search tree
+    BinarySearchTree rBST = new BinarySearchTree();
+    rBST.insert(2);
+    rBST.insert(1);
+    rBST.insert(3);
+
+    /*
+
+        2
+       / \
+      1   3
+
+     */
+
+    System.out.println("\nRoot: " + rBST.getRootNode().value);
+    System.out.println("Root->Left: " + rBST.getRootNode().left.value);
+    System.out.println("Root->Right: " + rBST.getRootNode().right.value);
+
+    rBST.deleteNode(2);
+
+    System.out.println("\nRoot: " + rBST.getRootNode().value);
+    System.out.println("Root->Left: " + rBST.getRootNode().left.value);
+    System.out.println("Root->Right: " + rBST.getRootNode().right);
   }
 
 }
