@@ -50,6 +50,25 @@ public class Main {
     System.out.println("\nRoot: " + rBST.getRootNode().value);
     System.out.println("Root->Left: " + rBST.getRootNode().left.value);
     System.out.println("Root->Right: " + rBST.getRootNode().right);
+
+    // BST BFS
+    BinarySearchTree BSTTraversal = new BinarySearchTree();
+
+    BSTTraversal.insert(47);
+    BSTTraversal.insert(21);
+    BSTTraversal.insert(76);
+    BSTTraversal.insert(18);
+    BSTTraversal.insert(27);
+    BSTTraversal.insert(52);
+    BSTTraversal.insert(82);
+
+    System.out.println(BSTTraversal.getRootNode().value);
+    System.out.println(BSTTraversal.BFS());
+
+
+    System.out.println(BSTTraversal.DFSPreOrder());
+    System.out.println(BSTTraversal.DFSPostOrder());
+    System.out.println(BSTTraversal.DFSInOrder());
   }
 
 }
