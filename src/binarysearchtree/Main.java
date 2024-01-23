@@ -65,6 +65,8 @@ public class Main {
     System.out.println(BSTTraversal.getRootNode().value);
     System.out.println(BSTTraversal.BFS());
 
+
+    System.out.println(BSTTraversal.DFSPreOrder());
   }
 
 }
