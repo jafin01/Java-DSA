@@ -62,7 +62,7 @@ The workspace contains the following folders by default, where:
     - printTable()
     - set()
     - get()
-    - remove()    
+    - remove()   
 
 ## Run locally
 
